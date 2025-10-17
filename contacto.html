@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<header>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mi Sitio Web</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Proyectos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+</header>
+
+<body>
+    <h2>Contactame</h2>
+
+    <br>
+    <form id="form">
+        <div class="field">
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div class="field">
+            <label for="email">correo</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" rows="5" placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+
+        <input type="submit" id="button" value="Enviar">
+    </form>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('fDH9FRhbCecB0WRmR')
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
